@@ -1,0 +1,182 @@
+body {
+  background-color: white;
+  font-size: 1.3em;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* menu */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-image: url("slike/vzorec.jpg");
+  padding: 0 20px;
+}
+
+.logo_postavitev {
+  padding: 10px;
+  list-style-type: none;
+  flex: 0 0 auto;
+}
+
+.logo {
+  width: 150px;
+  border-radius: 120px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  flex: 1;
+  position: relative;
+}
+
+.menu li {
+  display: inline;
+  vertical-align: middle;
+}
+
+.menu li a {
+  padding: 15px 30px;
+  
+  text-decoration: none;
+  color: #fff;
+  font-size: 1em;
+  font-weight: bold;
+  border-radius: 45px;
+  background-color: #0051ff;
+  transition: background-color 0.3s;
+  margin-right: 50px;
+}
+
+.menu li:nth-child(-n+4) {
+  /* Apply to the first four items */
+  margin-right: 0;
+}
+
+.menu li:last-child {
+  position: absolute;
+  right: 0;
+}
+
+.menu li a:hover {
+  background-color: #0034c2;
+}
+
+
+/*footer*/
+footer {
+  background-color: #333;
+  padding: 40px 0;
+  color: white;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.column {
+  flex: 1;
+  min-width: 200px;
+  margin: 10px;
+}
+
+.social-icons {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.social-item {
+  margin: 10px 0;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.social-icons i {
+  font-size: 36px;
+}
+
+.social-icons a:hover {
+  color: #ff0055; 
+}
+
+.address {
+  text-align: left;
+}
+
+.trainer {
+  margin: 20px 0;
+}
+
+.trainer h4 {
+  margin-bottom: 10px;
+}
+
+.trainer p {
+  margin: 5px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .column {
+      margin: 10px 0;
+  }
+}
+
+
+
+/* trenerja*/
+
+section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.content {
+  flex: 1;
+  padding-right: 20px;
+  padding-left: 40px;
+  font-size: 1.1em;
+}
+
+.content h1{
+  color: #0034c2;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.image {
+  flex: 1;
+  text-align: center;
+}
+
+.image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 100px;
+}
